@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameScene"); // Make sure this scene exists
+        SceneManager.LoadScene("Intro"); // Make sure this scene exists
     }
 
     public void OpenOptions()

@@ -12,6 +12,7 @@ public class CollectibleItem : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             CollectItem();
+            CollectionManager.Instance.AddCollectible();
         }
     }
 
