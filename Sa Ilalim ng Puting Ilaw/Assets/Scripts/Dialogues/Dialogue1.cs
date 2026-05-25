@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using System.Security.Cryptography;
 
 public class Dialogue1 : MonoBehaviour
 {
+    public AudioClip typingSound;
+    private AudioSource audioSource;
+    public GameObject nextSceneButton;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
@@ -16,10 +21,12 @@ public class Dialogue1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        nextSceneButton.SetActive(false);
         textComponent.text = string.Empty;
         StartDialogue();
         AryySprite();
-        
+
     }
 
     // Update is called once per frame
@@ -29,12 +36,14 @@ public class Dialogue1 : MonoBehaviour
         {
             if (textComponent.text == lines[index])
             {
+                audioSource.Play();
                 NextLine();
                 AryySprite();
             }
             else
             {
                 StopAllCoroutines();
+                audioSource.Stop();
                 textComponent.text = lines[index];
             }
         }
@@ -47,10 +56,16 @@ public class Dialogue1 : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach(char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+
+            if (c != ' ')
+            {
+                audioSource.PlayOneShot(typingSound);
+            }
+
+            yield return new WaitForSecondsRealtime(textSpeed);
         }
     }
     void NextLine()
@@ -63,16 +78,23 @@ public class Dialogue1 : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            nextSceneButton.SetActive(true);
         }
     }
     void AryySprite()
     {
-        if (index >= 0)
+        arry.SetActive(true);
+        if (index >= 8)
         {
+            lola.SetActive(true);
 
-            arry.SetActive(true);
-            lola.SetActive(false);
         }
+        
     }
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene("ChaseScene");
+    }
+
+
 }

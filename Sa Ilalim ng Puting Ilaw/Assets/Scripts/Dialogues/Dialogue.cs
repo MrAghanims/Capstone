@@ -96,7 +96,7 @@ public class Dialogue : MonoBehaviour
     }
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Intro 1");
     }
 
 

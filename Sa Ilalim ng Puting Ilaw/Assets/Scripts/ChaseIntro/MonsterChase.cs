@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
-public class SigbinMove : MonoBehaviour
+public class MonsterChase : MonoBehaviour
 {
+    public FadeController fadeController;
+    public Image flashImage;
+    private bool caughtPlayer = false;
+
     public Transform player;
 
     public float speed = 2f;
@@ -49,11 +54,40 @@ public class SigbinMove : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (caughtPlayer) return;
+
+        if (other.CompareTag("Player"))
         {
-            FindObjectOfType<GameOverManager>().GameOver();
+            caughtPlayer = true;
+
+            StartCoroutine(CatchSequence());
         }
+        CutsceneAutoRun playerController =
+    other.GetComponent<CutsceneAutoRun>();
+
+        if (playerController != null)
+        {
+            playerController.enabled = false;
+        }
+    }
+    IEnumerator CatchSequence()
+    {
+        // Stop monster movement
+        rb.velocity = Vector2.zero;
+        speed = 0f;
+
+        // White flash
+        flashImage.color = new Color(1, 1, 1, 1);
+
+        yield return new WaitForSeconds(0.08f);
+
+        flashImage.color = new Color(1, 1, 1, 0);
+
+        yield return new WaitForSeconds(0.2f);
+
+        // Fade to black
+        fadeController.StartFade();
     }
 }

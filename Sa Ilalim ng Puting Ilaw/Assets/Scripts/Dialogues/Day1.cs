@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -7,6 +8,9 @@ using System;
 
 public class Day1 : MonoBehaviour
 {
+    public AudioClip typingSound;
+    private AudioSource audioSource;
+    public GameObject nextSceneButton;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
@@ -16,10 +20,12 @@ public class Day1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        nextSceneButton.SetActive(false);
         textComponent.text = string.Empty;
         StartDialogue();
         AryySprite();
-        
+
     }
 
     // Update is called once per frame
@@ -29,12 +35,14 @@ public class Day1 : MonoBehaviour
         {
             if (textComponent.text == lines[index])
             {
+                audioSource.Play();
                 NextLine();
                 AryySprite();
             }
             else
             {
                 StopAllCoroutines();
+                audioSource.Stop();
                 textComponent.text = lines[index];
             }
         }
@@ -47,9 +55,15 @@ public class Day1 : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach(char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
+
+            if (c != ' ')
+            {
+                audioSource.PlayOneShot(typingSound);
+            }
+
             yield return new WaitForSecondsRealtime(textSpeed);
         }
     }
@@ -63,7 +77,7 @@ public class Day1 : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            nextSceneButton.SetActive(true);
         }
     }
     void AryySprite()
@@ -80,4 +94,10 @@ public class Day1 : MonoBehaviour
             lola.SetActive(true);
         }
     }
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+
+
 }

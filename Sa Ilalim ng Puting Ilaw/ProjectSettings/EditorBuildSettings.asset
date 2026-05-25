@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene.unity
     guid: a2f2592cc65da484fa32e77282f957cf
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
+    path: Assets/Scenes/Cutscenes/Intro.unity
     guid: def9207e065811b4193778f981f31b47
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Intro 1.unity
+    guid: 627f4b5e0d95c6445b9e3ce64e68b34f
+  - enabled: 1
+    path: Assets/Scenes/ChaseScene.unity
+    guid: df77d7c7b7774f24bb6e8da5f1e36e58
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Day 1.unity
+    guid: 7e4ddc15d1d0e654589fa27e581f5a41
   m_configObjects: {}
