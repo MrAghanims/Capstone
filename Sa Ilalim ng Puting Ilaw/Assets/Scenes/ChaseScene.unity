@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639235467}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -2222,7 +2222,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639235469}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -29546,7 +29546,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639235467}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
@@ -29680,83 +29680,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &639235466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 639235468}
-  - component: {fileID: 639235467}
-  - component: {fileID: 639235469}
-  - component: {fileID: 639235470}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &639235467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639235466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d0ee1e7fd0ef7c47b7594709f242db9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverUI: {fileID: 275668006}
---- !u!4 &639235468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639235466}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 557.91205, y: 156.94681, z: -3.723522}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &639235469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639235466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a607038679577a4ba605d39f9f2e7ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseUI: {fileID: 1507546619}
---- !u!114 &639235470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639235466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2213543c87e27b74eb251505439fb15e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectText: {fileID: 0}
-  collected: 0
-  total: 3
-  trap: {fileID: 0}
-  nextInstruction: Build a trap for the Sigbin!
 --- !u!1 &675247202
 GameObject:
   m_ObjectHideFlags: 0
@@ -47396,7 +47319,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639235467}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -47529,7 +47452,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639235469}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -49535,7 +49458,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639235469}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -50742,7 +50665,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 639235467}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1
@@ -52028,7 +51951,6 @@ SceneRoots:
   - {fileID: 545227757}
   - {fileID: 365423952}
   - {fileID: 1524942791}
-  - {fileID: 639235468}
   - {fileID: 411288198}
   - {fileID: 378956585}
   - {fileID: 127156894}
