@@ -19,13 +19,9 @@ public class Trap : MonoBehaviour
 
     void CollectItem()
     {
-        Debug.Log("Item collected!");
-
-        // Hide UI
-        interactText.SetActive(false);
-
-        // Remove item
         Destroy(gameObject);
+        FindObjectOfType<SceneTransition>()
+    .StartTransition("You wait till Nightfall...");
     }
 
     void OnTriggerEnter2D(Collider2D other)
