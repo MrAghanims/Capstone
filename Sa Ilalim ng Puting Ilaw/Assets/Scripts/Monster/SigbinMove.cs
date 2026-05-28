@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SigbinMove : MonoBehaviour
 {
+    public GameObject gameOverPanel;
     public Transform player;
 
     public float speed = 2f;
@@ -12,6 +13,7 @@ public class SigbinMove : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private bool triggered = false;
 
     void Start()
     {
@@ -28,6 +30,9 @@ public class SigbinMove : MonoBehaviour
         // ONLY CHASE IF PLAYER IS CLOSE ENOUGH
         if (distance <= chaseRange)
         {
+            MusicManager.Instance.StartChase();
+           
+          
             Vector2 direction =
                 (player.position - transform.position).normalized;
 
@@ -46,14 +51,27 @@ public class SigbinMove : MonoBehaviour
         else
         {
             // STOP MOVING WHEN PLAYER TOO FAR
+            MusicManager.Instance.StopChase();
             rb.velocity = Vector2.zero;
         }
     }
-    void OnCollisionEnter2D(Collision2D collision)
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (triggered) return;
+
+        if (collision.CompareTag("Player"))
         {
-            FindObjectOfType<GameOverManager>().GameOver();
+            TriggerGameOver();
         }
+    }
+    void TriggerGameOver()
+    {
+        triggered = true;
+
+        gameOverPanel.SetActive(true);
+
+        Time.timeScale = 0f; // pause game
     }
 }
