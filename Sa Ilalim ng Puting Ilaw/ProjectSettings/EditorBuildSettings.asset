@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 1/GameSceneNight.unity
     guid: a359e8c4459ac9447b7588437f61f54c
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Day 2.unity
+    guid: e807e9a6f4b30ac4e85f33ec31c53f2e
   m_configObjects: {}
