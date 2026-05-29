@@ -653,38 +653,37 @@ MonoBehaviour:
   nextSceneButton: {fileID: 171621790}
   textComponent: {fileID: 1181608605}
   lines:
-  - Lola?
-  - Arry dear, you're awake! How's your sleep?
-  - Last night wasn't a nightmare, right? That was real?
-  - ...yes dear. You were nearly dragged away by a Sigbin.
-  - A Sigbin?
-  - Yes, they are the wicked pets of the Aswang. It was likely sent to look for victims.
-  - Tell me more, Lola.
-  - Very well. The Sigbin can shapeshift, go invisible, and even run backwards. Its
-    true form is that of a misshapen dog.
-  - How can I even avoid or see it, Lola?
-  - You listen for clapping.
-  - I see... what are its weaknesses po?
-  - The Sigbin are vulnerable to fire, my dear. Gather some oil and set it ablaze
-    while the Sigbin is distracted
+  - I did it Lola!
+  - Arry dear, are you okay?
+  - Yes, I hunted the Sigbin, but I still I had that nightmare again.
+  - I see, that means our work has just begun...
+  - What is there to do po?
+  - I sensed just now that the resident Kapre is becoming quite grumpy, could you
+    appease it dear?
+  - Sure po, Lola
+  - Kapre are creatures of teh trees, usually docile. However, they must still be
+    treated with respect.
+  - I see po
+  - Some people have no decency, so they fall for its tricker in consequence.
+  - Where should I go po?
+  - Head towards where the mango trees are densest, then try to follow the scent
+    of cigars
   - Anything else po?
-  - Hmmmm, the Sigbin can quicken your death by biting your shadow, so stay close
-    to the trees to avoid casting your own.
+  - You will know a Kapre is near when you hear a man's laughter and rustling of
+    leaves.
   - I see po.
-  - Why so curious all of the sudden, dear?
-  - I'm sorry I didn't believe you all this time, Lola. I didn't know monsters roamed
-    the forest for so long.
-  - Well, who do you think protected you? Haha!
-  - ...
-  - You're going after it yourself, aren't you dear?
-  - Heheh, is it that obvious, po?
-  - You have the same look as me, when I was younger.
-  - What look? :0
-  - The look of wanting to protect someone.
+  - Leave an offering of handmade cigars dear and wait until a small rain shower
+    falls.
+  - Then?
+  - A Kapre will descend from his mango tree and accept your peace offering.
+  - Are the tabacco leaves ready po?
+  - Yes they are ready, do you remember how to make it?
+  - Of course po.
+  - That's my granddaughter!
   textSpeed: 0.05
   arry: {fileID: 266521770}
   lola: {fileID: 1087397376}
-  Nextscene: GameScene
+  Nextscene: GameScene1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

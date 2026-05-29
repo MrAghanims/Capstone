@@ -15,6 +15,7 @@ public class Day1 : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     public GameObject arry, lola;
+    public string Nextscene;
 
     private int index;
     // Start is called before the first frame update
@@ -96,7 +97,7 @@ public class Day1 : MonoBehaviour
     }
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene(Nextscene);
     }
 
 
