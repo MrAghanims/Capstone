@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = movement.normalized * speed;
-        Debug.Log($"MoveX: {movement.x}, MoveY: {movement.y}");
+        //Debug.Log($"MoveX: {movement.x}, MoveY: {movement.y}");
     }
 
 }

@@ -38,4 +38,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialogues/Kapre.unity
     guid: 54021314750b6064287f40c059557615
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/TikbalangScene.unity
+    guid: a93841a7b6fa9794baad374ad4fd1c5e
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Tikbalang.unity
+    guid: 4f1152315fec9c343bdf4903944646fe
+  - enabled: 1
+    path: Assets/Scenes/Day 3/GameScene2Night.unity
+    guid: de3b52ab6e856ac4980b2780be6b4508
+  - enabled: 1
+    path: Assets/Scenes/Day 3/GameScene2.unity
+    guid: 50cd131ad57444b4bbac08c51e4ddd4d
   m_configObjects: {}

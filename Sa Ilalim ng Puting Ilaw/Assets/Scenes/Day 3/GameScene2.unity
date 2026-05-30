@@ -2841,7 +2841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftEdge: -10
   rightEdge: 10
-  loopsNeeded: 7
+  loopsNeeded: 5
   objectToAppear: {fileID: 1685305831}
 --- !u!1 &341193859
 GameObject:
@@ -31617,7 +31617,7 @@ MonoBehaviour:
   fadePanel: {fileID: 1136554842}
   fadeImage: {fileID: 1136554844}
   transitionText: {fileID: 1648637125}
-  nextSceneName: Tikbalang
+  nextSceneName: TikbalangScene
   fadeSpeed: 0.3
 --- !u!1 &652847644
 GameObject:

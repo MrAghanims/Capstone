@@ -6,14 +6,14 @@ public class Trap1 : MonoBehaviour
 {
     public GameObject interactText;
     private bool playerInRange = false;
-    public GameObject trap;
+
 
     void Update()
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             CollectItem();
-            trap.SetActive(true);
+           
         }
     }
 

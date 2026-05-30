@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 048c30e48f9a9e045a05f0c8b697d8de
+guid: 4f58abe2d9438134f8e8125e66f4cd78
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tikbalang_Sprite_Sheet_0
+      name: Tikbalang_Sprite_Sheet_NEW_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa1ec49f1810c91478051b44e2b160b4
-      internalID: 1879103607
+      spriteID: 71134b1e0448ede499fafe66f487243b
+      internalID: 735959089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tikbalang_Sprite_Sheet_1
+      name: Tikbalang_Sprite_Sheet_NEW_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f062a1cd02d1034692d00f975ede604
-      internalID: -1574045670
+      spriteID: 5c25800d64d8c854d812fd76eeefe136
+      internalID: -672413712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tikbalang_Sprite_Sheet_2
+      name: Tikbalang_Sprite_Sheet_NEW_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c9ea49dcb723aa4f909333e35c6008e
-      internalID: -193949138
+      spriteID: 18cdbe9d85791fc479db3b9b2b3e766b
+      internalID: 1045681212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tikbalang_Sprite_Sheet_3
+      name: Tikbalang_Sprite_Sheet_NEW_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ab8717c232168044ac1e54d6fdef406
-      internalID: -1143613014
+      spriteID: a8e5ddf100fc8564e953bb194de14fd0
+      internalID: -1823567520
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tikbalang_Sprite_Sheet_0: 1879103607
-      Tikbalang_Sprite_Sheet_1: -1574045670
-      Tikbalang_Sprite_Sheet_2: -193949138
-      Tikbalang_Sprite_Sheet_3: -1143613014
+      Tikbalang_Sprite_Sheet_NEW_0: 735959089
+      Tikbalang_Sprite_Sheet_NEW_1: -672413712
+      Tikbalang_Sprite_Sheet_NEW_2: 1045681212
+      Tikbalang_Sprite_Sheet_NEW_3: -1823567520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
