@@ -1589,6 +1589,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+--- !u!1 &162990504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6262905445923754182, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+  m_PrefabInstance: {fileID: 162990503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &162990505 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4480977746171269812, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+  m_PrefabInstance: {fileID: 162990503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &162990506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5502867474164625615, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+  m_PrefabInstance: {fileID: 162990503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &162990507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2917991018134015630, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+  m_PrefabInstance: {fileID: 162990503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162990506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &162990508 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7764831167694950536, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+  m_PrefabInstance: {fileID: 162990503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &162990509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2776170093534843587, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+  m_PrefabInstance: {fileID: 162990503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &162990510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8503311980546909299, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+  m_PrefabInstance: {fileID: 162990503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &181066399
 GameObject:
   m_ObjectHideFlags: 0
@@ -30478,7 +30531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0ee1e7fd0ef7c47b7594709f242db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverUI: {fileID: 0}
+  gameOverUI: {fileID: 162990509}
 --- !u!4 &639235468
 Transform:
   m_ObjectHideFlags: 0
@@ -30506,7 +30559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a607038679577a4ba605d39f9f2e7ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseUI: {fileID: 0}
+  pauseUI: {fileID: 162990510}
 --- !u!114 &639235472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30519,7 +30572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978c63ed9e87b834cb0e9a9679739c81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectText: {fileID: 0}
+  collectText: {fileID: 162990508}
   collected: 0
   total: 3
   trap: {fileID: 1685305831}
@@ -30536,9 +30589,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51f7ee20e9e6c77448ef495079868902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadePanel: {fileID: 0}
-  fadeImage: {fileID: 0}
-  transitionText: {fileID: 0}
+  fadePanel: {fileID: 162990506}
+  fadeImage: {fileID: 162990507}
+  transitionText: {fileID: 162990505}
   nextSceneName: KapreScene
   fadeSpeed: 0.3
 --- !u!1 &651379290
@@ -50529,7 +50582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e954101f8b8526d4bb048148b35b8d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 162990504}
 --- !u!1 &1574521856
 GameObject:
   m_ObjectHideFlags: 0
@@ -52068,7 +52121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e954101f8b8526d4bb048148b35b8d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 162990504}
 --- !u!1 &1682311573
 GameObject:
   m_ObjectHideFlags: 0
@@ -54481,7 +54534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e954101f8b8526d4bb048148b35b8d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 162990504}
 --- !u!1 &2044962561
 GameObject:
   m_ObjectHideFlags: 0

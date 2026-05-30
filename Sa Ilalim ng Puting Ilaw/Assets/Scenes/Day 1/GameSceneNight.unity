@@ -5598,11 +5598,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &594328250 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5502867474164625615, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-  m_PrefabInstance: {fileID: 368487922496019543}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &595061123
 GameObject:
   m_ObjectHideFlags: 0
@@ -31446,7 +31441,6 @@ GameObject:
   - component: {fileID: 639235468}
   - component: {fileID: 639235467}
   - component: {fileID: 639235469}
-  - component: {fileID: 639235471}
   - component: {fileID: 639235472}
   m_Layer: 0
   m_Name: GameManager
@@ -31496,23 +31490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 1507546619}
---- !u!114 &639235471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639235466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51f7ee20e9e6c77448ef495079868902, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadePanel: {fileID: 594328250}
-  fadeImage: {fileID: 0}
-  transitionText: {fileID: 724430868}
-  nextSceneName: GameSceneNight
-  fadeSpeed: 1
 --- !u!114 &639235472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42507,17 +42484,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &724430868 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4480977746171269812, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-  m_PrefabInstance: {fileID: 368487922496019543}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &726965355
 GameObject:
   m_ObjectHideFlags: 0
