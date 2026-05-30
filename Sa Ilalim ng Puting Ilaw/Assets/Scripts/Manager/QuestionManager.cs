@@ -21,6 +21,7 @@ public class QuestionManager : MonoBehaviour
 
     void Start()
     {
+        resultText.alpha = 0f;
         ShowQuestion();
     }
 
@@ -35,7 +36,10 @@ public class QuestionManager : MonoBehaviour
     {
         if (playerAnswer == questions[currentQuestion].correctAnswer)
         {
+            resultText.color = Color.green;
             resultText.text = "Correct!";
+            StopAllCoroutines();
+            StartCoroutine(FadeResultText());
 
             currentQuestion++;
 
@@ -50,7 +54,10 @@ public class QuestionManager : MonoBehaviour
         }
         else
         {
+            resultText.color = Color.red;
             resultText.text = "Wrong!";
+            StopAllCoroutines();
+            StartCoroutine(FadeResultText());
         }
 
         playerAnswer = 0;
@@ -59,5 +66,25 @@ public class QuestionManager : MonoBehaviour
     void ShowQuestion()
     {
         questionText.text = questions[currentQuestion].questionText;
+    }
+    IEnumerator FadeResultText()
+    {
+        resultText.alpha = 1f;
+
+        yield return new WaitForSeconds(1f);
+
+        float fadeTime = 2f;
+        float timer = 0f;
+
+        while (timer < fadeTime)
+        {
+            timer += Time.deltaTime;
+
+            resultText.alpha = Mathf.Lerp(1f, 0f, timer / fadeTime);
+
+            yield return null;
+        }
+
+        resultText.alpha = 0f;
     }
 }
