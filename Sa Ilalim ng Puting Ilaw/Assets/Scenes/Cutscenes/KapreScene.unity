@@ -43091,7 +43091,7 @@ MonoBehaviour:
   moveDirection: {x: 1, y: 0}
   fadeImage: {fileID: 317913594}
   sceneFadeDuration: 2
-  nextSceneName: Day 1
+  nextSceneName: Kapre
 --- !u!61 &772049669
 BoxCollider2D:
   m_ObjectHideFlags: 0

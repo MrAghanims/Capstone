@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/KapreScene.unity
     guid: cddc5b89604df884892c2f62978bc414
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Kapre.unity
+    guid: 54021314750b6064287f40c059557615
   m_configObjects: {}
