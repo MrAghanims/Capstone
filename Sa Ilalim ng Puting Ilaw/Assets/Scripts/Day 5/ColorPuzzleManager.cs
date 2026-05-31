@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Required for UI elements
+using UnityEngine.UI;
+using TMPro;
 
 public class ColorPuzzleManager : MonoBehaviour
 {
+    public AudioClip bossStaySFX;
+    private AudioSource audioSource;
+
+    public TextMeshProUGUI scoreboardText;
     public Slider timerSlider;
     public GameObject gameOverPanel;
     public GameObject WinPanel;
@@ -34,10 +39,25 @@ public class ColorPuzzleManager : MonoBehaviour
 
     private List<GameObject> spawnedBossUI = new List<GameObject>();
     private List<GameObject> spawnedPlayerUI = new List<GameObject>();
+    private int totalAllowedFailures;
+    private int currentFailures = 0;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.loop = false;
         successfulMatches = 0;
+        currentFailures = 0;
+
+        // Calculate how many times the boss can move left before crossing the line
+        if (boss != null)
+        {
+            float totalDistance = Mathf.Abs(boss.transform.position.x - boss.gameOverXPosition);
+            totalAllowedFailures = Mathf.CeilToInt(totalDistance / boss.moveStep);
+        }
+
+        UpdateScoreboardUI();
         StartNextRound();
     }
 
@@ -76,6 +96,7 @@ public class ColorPuzzleManager : MonoBehaviour
         bossSequence.Clear();
 
         // Explicitly make sure the boss panel is visible before generating the visual squares
+        if (timerSlider != null) timerSlider.gameObject.SetActive(false);
         bossUIPanel.gameObject.SetActive(true);
 
         int sequenceLength = 3;
@@ -103,6 +124,12 @@ public class ColorPuzzleManager : MonoBehaviour
 
         // Hide Boss UI (Turn off visibility so player has to memorize it)
         bossUIPanel.gameObject.SetActive(false);
+
+        if (timerSlider != null)
+        {
+            timerSlider.gameObject.SetActive(true);
+            timerSlider.value = 1f;
+        }
 
         currentState = GameState.PlayerTurn;
         currentTimer = timeToInput;
@@ -156,8 +183,10 @@ public class ColorPuzzleManager : MonoBehaviour
     void OnRoundSuccess()
     {
         successfulMatches++;
+        UpdateScoreboardUI();
         Debug.Log($"Correct! {successfulMatches}/{targetWins}");
         bossUIPanel.gameObject.SetActive(true); // Turn panel visibility back on
+        audioSource.PlayOneShot(bossStaySFX);
 
         if (successfulMatches >= targetWins)
         {
@@ -176,6 +205,8 @@ public class ColorPuzzleManager : MonoBehaviour
 
     void OnRoundFailed()
     {
+        currentFailures++;
+        UpdateScoreboardUI();
         Debug.Log("Incorrect combination or timeout!");
         bossUIPanel.gameObject.SetActive(true); // Reveal what the correct answer was
         boss.MoveCloser();
@@ -192,6 +223,22 @@ public class ColorPuzzleManager : MonoBehaviour
         else
         {
             Invoke("StartNextRound", 1.5f);
+        }
+    }
+    void UpdateScoreboardUI()
+    {
+        if (scoreboardText != null)
+        {
+            int remainingToWin = targetWins - successfulMatches;
+            int remainingWrongs = totalAllowedFailures - currentFailures;
+
+            // Keeps remaining values locked to 0 minimum so it doesn't display negative numbers on win/loss
+            if (remainingToWin < 0) remainingToWin = 0;
+            if (remainingWrongs < 0) remainingWrongs = 0;
+
+            // Formats it cleanly into strings across 3 lines
+            scoreboardText.text = $"Wins: {successfulMatches} / {targetWins}\n" +
+                                  $"Chances Left: {remainingWrongs}";
         }
     }
 
