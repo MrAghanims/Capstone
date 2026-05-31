@@ -4,60 +4,36 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using System;
+using System.Security.Cryptography;
 
-public class Dialogue2 : MonoBehaviour
+public class Day4After : MonoBehaviour
 {
     public AudioClip typingSound;
     private AudioSource audioSource;
-
     public GameObject nextSceneButton;
     public TextMeshProUGUI textComponent;
-
     public string[] lines;
     public float textSpeed;
-
     public GameObject arry, lola;
 
-    // Fade Transition
-    public Image fadeImage;
-    public TMP_Text transitionText;
-
-    public string nextSceneName = "ChaseScene";
-    public string transitionMessage = "The chase begins...";
-    public float fadeDuration = 2f;
-    public float textDuration = 2f;
-
     private int index;
-
+    // Start is called before the first frame update
     void Start()
     {
         if (MenuMusic.Instance != null)
         {
             MenuMusic.Instance.StopMusic();
         }
-
         audioSource = GetComponent<AudioSource>();
-
         nextSceneButton.SetActive(false);
-
         textComponent.text = string.Empty;
-
-        // Initialize fade UI
-        if (fadeImage != null)
-        {
-            fadeImage.color = new Color(0, 0, 0, 0);
-        }
-
-        if (transitionText != null)
-        {
-            transitionText.gameObject.SetActive(false);
-        }
-
         StartDialogue();
         AryySprite();
+
     }
 
+    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -76,7 +52,6 @@ public class Dialogue2 : MonoBehaviour
             }
         }
     }
-
     void StartDialogue()
     {
         index = 0;
@@ -97,7 +72,6 @@ public class Dialogue2 : MonoBehaviour
             yield return new WaitForSecondsRealtime(textSpeed);
         }
     }
-
     void NextLine()
     {
         if (index < lines.Length - 1)
@@ -111,63 +85,20 @@ public class Dialogue2 : MonoBehaviour
             nextSceneButton.SetActive(true);
         }
     }
-
     void AryySprite()
     {
-        if (index % 2 == 0)
+        arry.SetActive(true);
+        if (index >= 8)
         {
-
-            arry.SetActive(true);
-            lola.SetActive(false);
-        }
-        else
-        {
-            arry.SetActive(false);
             lola.SetActive(true);
-        }
-    }
 
+        }
+
+    }
     public void LoadNextScene()
     {
-        StartCoroutine(FadeAndLoadScene());
+        SceneManager.LoadScene("GameScene3Night");
     }
 
-    IEnumerator FadeAndLoadScene()
-    {
-        nextSceneButton.SetActive(false);
 
-        if (transitionText != null)
-        {
-            transitionText.gameObject.SetActive(true);
-            transitionText.text = transitionMessage;
-            transitionText.alpha = 0f;
-        }
-
-        float timer = 0f;
-
-        while (timer < fadeDuration)
-        {
-            timer += Time.deltaTime;
-
-            float progress = timer / fadeDuration;
-
-            if (fadeImage != null)
-            {
-                Color fadeColor = fadeImage.color;
-                fadeColor.a = Mathf.Lerp(0f, 1f, progress);
-                fadeImage.color = fadeColor;
-            }
-
-            if (transitionText != null)
-            {
-                transitionText.alpha = Mathf.Lerp(0f, 1f, progress);
-            }
-
-            yield return null;
-        }
-
-        yield return new WaitForSeconds(textDuration);
-
-        SceneManager.LoadScene(nextSceneName);
-    }
 }

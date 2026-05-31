@@ -77,4 +77,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialogues/Day 5.unity
     guid: c6bd5add1b451ac48ad136e3cb9b33a8
+  - enabled: 1
+    path: Assets/Scenes/Day 4/GameScene3.unity
+    guid: e418ddfea02934e40b3a44c6a2c74524
+  - enabled: 1
+    path: Assets/Scenes/Day 4/GameScene3Night.unity
+    guid: 313118f64b577474a828ae7223844e00
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Day 4 After.unity
+    guid: 9ed879aa56698a748b33b88cb5c52703
   m_configObjects: {}
