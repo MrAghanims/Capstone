@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 3/GameScene2.unity
     guid: 50cd131ad57444b4bbac08c51e4ddd4d
+  - enabled: 1
+    path: Assets/Scenes/Day 5/GameScene4.unity
+    guid: 875407403675c464ba149d5da925fa58
+  - enabled: 1
+    path: Assets/Scenes/Day 5/GameScene4Night.unity
+    guid: 12f271dc7dcb95949b148ed9bcad39c2
   m_configObjects: {}

@@ -56527,7 +56527,7 @@ MonoBehaviour:
   questionText: {fileID: 494195661}
   resultText: {fileID: 1679452963}
   questions:
-  - questionText: Why are you gay?
+  - questionText: 1 + 1?
     correctAnswer: 1
   - questionText: Aaron
     correctAnswer: 2
