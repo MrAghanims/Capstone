@@ -522,13 +522,15 @@ MonoBehaviour:
   - It looked like the moon was disappearing.
   - Hmmmm, I see. I think its time...
   - Huh? Time for what?
-  - Time for you to pick the garlic, of course! They're just about ready.
-  - Oh
-  - Just pick a few cloves for me, dear.
-  - Here you go, Lola!
-  - Thank you, Arry, dear. Now, do you know what garlic is used for?
-  - To make... garlic rice?
-  - Yes, that too, but that is not what I mean. You use them against our enemy.
+  - Remember the Bakunawa I told you about back then?
+  - The sea dragon who ate the moon?
+  - Not just one moon my dear, 6 moons.
+  - Really lola?
+  - Yes, In fact there were originally 7 moons in the sky, but the Bakunawa devoured
+    the rest leaving us with only the one we see before us.
+  - Wow, what an incredible story lola.
+  - You must be ready for it my granddaughter. There will be threats like monsters
+    soon.
   - Oh, the monsters you keep telling about since I was a child?
   - Yes dear, they are real.
   - Hahah, you're scaring me, Lola!
@@ -1213,7 +1215,7 @@ Transform:
   m_GameObject: {fileID: 1826991045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.48, y: 0, z: 5}
+  m_LocalPosition: {x: -0.04, y: 0, z: 5}
   m_LocalScale: {x: 1.2, y: 0.9304931, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

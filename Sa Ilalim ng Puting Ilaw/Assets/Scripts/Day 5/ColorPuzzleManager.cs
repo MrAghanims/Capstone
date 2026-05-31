@@ -6,14 +6,16 @@ using TMPro;
 
 public class ColorPuzzleManager : MonoBehaviour
 {
+
     public AudioClip bossStaySFX;
+    public AudioClip bossintrosfx;
     private AudioSource audioSource;
 
     public TextMeshProUGUI scoreboardText;
     public Slider timerSlider;
     public GameObject gameOverPanel;
     public GameObject WinPanel;
-    public enum GameState { Generating, Showing, PlayerTurn, Processing, GameOver, GameWon }
+    public enum GameState { StartScreen,Generating, Showing, PlayerTurn, Processing, GameOver, GameWon }
     public GameState currentState;
 
     [Header("Color Settings")]
@@ -26,6 +28,7 @@ public class ColorPuzzleManager : MonoBehaviour
     public GameObject colorSquarePrefab; // Drag your 'UIColorSquare' prefab here
     public Transform bossUIPanel;        // Drag 'BossSequencePanel' here
     public Transform playerUIPanel;      // Drag 'PlayerSequencePanel' here
+    public GameObject instructionPanel;
 
     [Header("Timers & Progression")]
     public float timeToShowSequence = 3.0f;
@@ -44,11 +47,20 @@ public class ColorPuzzleManager : MonoBehaviour
 
     void Start()
     {
+        scoreboardText.gameObject.SetActive(false);
+        Time.timeScale = 0f;
+        currentState = GameState.StartScreen;
+
+        playerUIPanel.gameObject.SetActive(false);
         audioSource = GetComponent<AudioSource>();
         audioSource.playOnAwake = false;
         audioSource.loop = false;
         successfulMatches = 0;
         currentFailures = 0;
+
+        if (instructionPanel != null) instructionPanel.SetActive(true);
+        if (timerSlider != null) timerSlider.gameObject.SetActive(false);
+        bossUIPanel.gameObject.SetActive(false);
 
         // Calculate how many times the boss can move left before crossing the line
         if (boss != null)
@@ -58,9 +70,23 @@ public class ColorPuzzleManager : MonoBehaviour
         }
 
         UpdateScoreboardUI();
+    }
+    public void StartGame()
+    {
+        scoreboardText.gameObject.SetActive(true);
+        audioSource.PlayOneShot(bossintrosfx);
+        Time.timeScale = 1f;
+        if (currentState != GameState.StartScreen) return;
+
+        // Hide the instruction overlay panel completely
+        if (instructionPanel != null)
+        {
+            instructionPanel.SetActive(false);
+        }
+
+        // Seamlessly kick off the actual game loop
         StartNextRound();
     }
-
     void Update()
     {
         if (currentState == GameState.PlayerTurn)
@@ -89,7 +115,7 @@ public class ColorPuzzleManager : MonoBehaviour
     {
         // Ensure the state resets cleanly
         currentState = GameState.Generating;
-
+        playerUIPanel.gameObject.SetActive(false);
         ClearUI(spawnedBossUI);
         ClearUI(spawnedPlayerUI);
         playerSequence.Clear();
@@ -138,6 +164,7 @@ public class ColorPuzzleManager : MonoBehaviour
     // Called by pots
     public void PlayerSelectedColor(int colorIndex)
     {
+        playerUIPanel.gameObject.SetActive(true);
         if (currentState != GameState.PlayerTurn) return;
 
         // Prevent overflow inputs beyond sequence length
@@ -151,10 +178,10 @@ public class ColorPuzzleManager : MonoBehaviour
         spawnedPlayerUI.Add(square);
     }
 
-    // Called specifically by the new Submit Altar script
+    
     public void SubmitAnswer()
     {
-        // CRUCIAL LOCK: Only allow submission if it is explicitly the Player's turn!
+        
         if (currentState != GameState.PlayerTurn) return;
 
         // Immediately change state so this function cannot run again next frame
@@ -190,8 +217,8 @@ public class ColorPuzzleManager : MonoBehaviour
 
         if (successfulMatches >= targetWins)
         {
-            ClearUI(spawnedBossUI);
-            ClearUI(spawnedPlayerUI);
+            playerUIPanel.gameObject.SetActive(false);
+            bossUIPanel.gameObject.SetActive(false);
             currentState = GameState.GameWon;
             WinPanel.SetActive(true);
             Debug.Log("VICTORY!");
@@ -213,8 +240,8 @@ public class ColorPuzzleManager : MonoBehaviour
 
         if (boss.IsTooClose())
         {
-            ClearUI(spawnedBossUI);
-            ClearUI(spawnedPlayerUI);
+            playerUIPanel.gameObject.SetActive(false);
+            bossUIPanel.gameObject.SetActive(false);
             currentState = GameState.GameOver;
             gameOverPanel.SetActive(true);
             Debug.Log("GAME OVER");

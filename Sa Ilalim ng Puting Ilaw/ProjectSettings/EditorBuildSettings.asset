@@ -56,4 +56,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 5/GameScene4Night.unity
     guid: 12f271dc7dcb95949b148ed9bcad39c2
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Day 4.unity
+    guid: 96ce47b2907dd554ab2924de06693a0a
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Day 3.unity
+    guid: 8d7ff9150d69f9448b9a7c53dbdf26b0
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 5a1cc4dcd49a592478bebb4b080cac00
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Bakunawa.unity
+    guid: f829a6fbe3b69fa4f9f33dcbcfa10f21
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Tikbalang1.unity
+    guid: 67baa354356780b43a6e2a88a7843233
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Kapre-After.unity
+    guid: 98989192877b61744a0a00f2c91f1ae3
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Day 5.unity
+    guid: c6bd5add1b451ac48ad136e3cb9b33a8
   m_configObjects: {}

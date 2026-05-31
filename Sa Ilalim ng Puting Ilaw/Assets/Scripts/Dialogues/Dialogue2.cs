@@ -16,6 +16,10 @@ public class Dialogue2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (MenuMusic.Instance != null)
+        {
+            MenuMusic.Instance.StopMusic();
+        }
         textComponent.text = string.Empty;
         StartDialogue();
         

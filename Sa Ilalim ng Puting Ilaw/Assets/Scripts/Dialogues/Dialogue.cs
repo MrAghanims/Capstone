@@ -20,6 +20,10 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (MenuMusic.Instance != null)
+        {
+            MenuMusic.Instance.StopMusic();
+        }
         audioSource = GetComponent<AudioSource>();
         nextSceneButton.SetActive(false);
         textComponent.text = string.Empty;

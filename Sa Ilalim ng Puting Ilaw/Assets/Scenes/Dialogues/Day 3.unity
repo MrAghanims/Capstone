@@ -676,6 +676,8 @@ MonoBehaviour:
   - What do I do if that happens po?
   - If that happens, you wear your shirt in reverse or offer something to them as
     a sign of peace.
+  - Okay po Lola
+  - Go home instantly after.
   textSpeed: 0.05
   arry: {fileID: 266521770}
   lola: {fileID: 1087397376}
@@ -1220,7 +1222,7 @@ Transform:
   m_GameObject: {fileID: 1518639603}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.48, y: 0, z: 5}
+  m_LocalPosition: {x: -0, y: 0, z: 5}
   m_LocalScale: {x: 1.2, y: 0.9304931, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
