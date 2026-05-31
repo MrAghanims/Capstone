@@ -50300,10 +50300,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235469}
-    - target: {fileID: 148274777728425006, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
     - target: {fileID: 283951006087608546, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -50388,46 +50384,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235469}
-    - target: {fileID: 2446397657147006066, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 2776170093534843587, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3205048563850061452, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -91.2
-      objectReference: {fileID: 0}
     - target: {fileID: 3340841449550221580, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235467}
-    - target: {fileID: 3340841449550221580, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 3782593291349402056, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235467}
-    - target: {fileID: 3782593291349402056, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
     - target: {fileID: 4018445583647259630, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235467}
-    - target: {fileID: 4018445583647259630, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 4480977746171269812, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_text
-      value: Fired
-      objectReference: {fileID: 0}
     - target: {fileID: 4862641062475166847, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -50436,46 +50408,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235467}
-    - target: {fileID: 4933487605119008640, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5502867474164625615, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7097036274149553862, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7102551944386083710, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 7764831167694950536, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_text
-      value: Go back home
-      objectReference: {fileID: 0}
-    - target: {fileID: 7764831167694950536, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_margin.z
-      value: 77.513306
-      objectReference: {fileID: 0}
     - target: {fileID: 8199328333885484058, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235467}
-    - target: {fileID: 8199328333885484058, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 8199328333885484058, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameOverManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8503311980546909299, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
