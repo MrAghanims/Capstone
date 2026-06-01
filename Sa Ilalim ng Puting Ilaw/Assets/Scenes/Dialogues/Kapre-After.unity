@@ -654,7 +654,7 @@ MonoBehaviour:
   textComponent: {fileID: 1181608605}
   lines:
   - Lola, I just talked with the Kapre and he warned me about a sea god?!
-  - So it is near, the Bakunawa
+  - So it is near, the Bakunawa...
   - Ohh that makes sense
   - That means we have to prepare
   - What is there to do po?
@@ -746,7 +746,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 5}
-  m_LocalScale: {x: 1.2, y: 0.9304931, z: 1}
+  m_LocalScale: {x: 0.93, y: 0.9304931, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
