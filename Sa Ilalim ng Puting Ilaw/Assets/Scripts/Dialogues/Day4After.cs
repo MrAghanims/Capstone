@@ -97,7 +97,7 @@ public class Day4After : MonoBehaviour
     }
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("GameScene3Night");
+        SceneManager.LoadScene("LolaAswang");
     }
 
 
