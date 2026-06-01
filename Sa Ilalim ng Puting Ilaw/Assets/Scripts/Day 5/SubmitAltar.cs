@@ -19,6 +19,7 @@ public class SubmitAltar : MonoBehaviour
         {
             Debug.Log("Answer Submitted!");
             puzzleManager.SubmitAnswer();
+            HideInteractText();
         }
     }
 
@@ -27,7 +28,9 @@ public class SubmitAltar : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearby = true;
-            interactText.SetActive(true);
+
+            if (interactText != null)
+                interactText.SetActive(true);
         }
     }
 
@@ -36,7 +39,19 @@ public class SubmitAltar : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearby = false;
+
+            if (interactText != null)
+                interactText.SetActive(false);
+        }
+    }
+
+    public void HideInteractText()
+    {
+        if (interactText != null)
+        {
             interactText.SetActive(false);
         }
+
+        playerNearby = false;
     }
 }

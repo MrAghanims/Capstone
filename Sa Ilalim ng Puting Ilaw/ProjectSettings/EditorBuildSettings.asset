@@ -89,4 +89,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialogues/LolaAswang.unity
     guid: 3721e4712e15a894fb37bc504af5259f
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/LolaGoodbye.unity
+    guid: 105b423dd4d12be4c8a50ee45f508ef4
   m_configObjects: {}

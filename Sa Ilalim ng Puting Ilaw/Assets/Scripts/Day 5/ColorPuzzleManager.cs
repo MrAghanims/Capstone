@@ -240,6 +240,8 @@ public class ColorPuzzleManager : MonoBehaviour
 
         if (boss.IsTooClose())
         {
+            scoreboardText.gameObject.SetActive(false);
+            timerSlider.gameObject.SetActive(false);
             playerUIPanel.gameObject.SetActive(false);
             bossUIPanel.gameObject.SetActive(false);
             currentState = GameState.GameOver;
