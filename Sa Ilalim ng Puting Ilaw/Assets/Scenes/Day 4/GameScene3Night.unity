@@ -47121,6 +47121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504c9687f4e9aee46bb521face601475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectText: {fileID: 1670608589}
   sfxAudioSource: {fileID: 940444982}
   stunSound: {fileID: 8300000, guid: 1bb7515bff32c454ab33ef2fa647a193, type: 3}
   recoverSound: {fileID: 8300000, guid: 7b5e523014a03c94e96672e4285f3527, type: 3}

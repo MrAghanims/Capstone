@@ -7,6 +7,7 @@ using static ColorPuzzleManager;
 [RequireComponent(typeof(SpriteRenderer))]
 public class AswangMove : MonoBehaviour
 {
+    public TextMeshProUGUI collectText;
     [Header("Audio")]
     public AudioSource sfxAudioSource;
     public AudioClip stunSound;
@@ -51,6 +52,7 @@ public class AswangMove : MonoBehaviour
 
     void Start()
     {
+        collectText.gameObject.SetActive(false);
         Time.timeScale = 0f;
         if (instructionPanel != null) instructionPanel.SetActive(true);
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -61,6 +63,7 @@ public class AswangMove : MonoBehaviour
         Time.timeScale = 1f;
         if (instructionPanel != null)
         {
+            collectText.gameObject.SetActive(true);
             instructionPanel.SetActive(false);
         }
 
