@@ -51151,7 +51151,7 @@ Transform:
   m_GameObject: {fileID: 1339908373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6584198, y: -1.73, z: -2}
+  m_LocalPosition: {x: -0.6584198, y: -1.73, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -52585,7 +52585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 502880621efc91446bc18fa6af5dd4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveStep: 8
+  moveStep: 4
   gameOverXPosition: -10
   bossMoveSFX: {fileID: 8300000, guid: 93da7c7e6448fb7488ab660e910a77cb, type: 3}
 --- !u!82 &1415278053
