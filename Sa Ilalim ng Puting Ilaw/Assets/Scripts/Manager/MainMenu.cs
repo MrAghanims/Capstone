@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Intro"); // Make sure this scene exists
+        SceneManager.LoadScene("Intro"); 
     }
 
     public void OpenOptions()
@@ -22,30 +22,34 @@ public class MainMenu : MonoBehaviour
     }
     public void Levels()
     {
-        SceneManager.LoadScene("LevelSelect"); // Make sure this scene exists
+        SceneManager.LoadScene("LevelSelect"); 
     }
     public void Levels1()
     {
-        SceneManager.LoadScene("Day 1"); // Make sure this scene exists
+        SceneManager.LoadScene("Day 1"); 
     }
     public void Levels2()
     {
-        SceneManager.LoadScene("Day 2"); // Make sure this scene exists
+        SceneManager.LoadScene("Day 2"); 
     }
     public void Levels3()
     {
-        SceneManager.LoadScene("Day 3"); // Make sure this scene exists
+        SceneManager.LoadScene("Day 3"); 
     }
     public void Levels4()
     {
-        SceneManager.LoadScene("Day 4"); // Make sure this scene exists
+        SceneManager.LoadScene("Day 4"); 
     }
     public void Levels5()
     {
-        SceneManager.LoadScene("Day 5"); // Make sure this scene exists
+        SceneManager.LoadScene("Day 5"); 
     }
     public void Mainmenu()
     {
-        SceneManager.LoadScene("MainMenu"); // Make sure this scene exists
+        SceneManager.LoadScene("MainMenu"); 
+    }
+    public void Bestiary()
+    {
+        SceneManager.LoadScene("Bestiary"); 
     }
 }

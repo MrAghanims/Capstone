@@ -92,4 +92,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialogues/LolaGoodbye.unity
     guid: 105b423dd4d12be4c8a50ee45f508ef4
+  - enabled: 1
+    path: Assets/Scenes/Bestiary.unity
+    guid: 4e82edcac97e2ad4db47c07582dd03d3
   m_configObjects: {}
