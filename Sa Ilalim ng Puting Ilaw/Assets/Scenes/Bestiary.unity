@@ -299,7 +299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 267.57, y: 22.6}
+  m_AnchoredPosition: {x: 255.2, y: 22.6}
   m_SizeDelta: {x: -535.13, y: -135.5196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41055488
@@ -433,7 +433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 288.4, y: 162.86}
+  m_AnchoredPosition: {x: 273.3, y: 161.1}
   m_SizeDelta: {x: -716.6648, y: -277.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98295025
@@ -835,19 +835,26 @@ MonoBehaviour:
   creatureDescription: {fileID: 41055488}
   creatures:
   - creatureName: Sigbin
-    description: Sigbin Description
+    description: The Sigbin is a creature said to come out at night to suck the blood
+      of victims from their shadows.
     image: {fileID: 21300000, guid: fc2a7cbc192ad024fb27e660acaa3efa, type: 3}
   - creatureName: Kapre
-    description: Kapre Description
+    description: 'The Kapre is described as a tree giant or ape like, being a tall,
+      dark-coloured, hairy, and muscular creature. '
     image: {fileID: 21300000, guid: d601f5de76366e44092a56921a290ef1, type: 3}
   - creatureName: Tikbalang
-    description: Tikbalang Description
+    description: Tikbalangs scare travelers, lead them astray and play tricks on
+      them such as making them return to an arbitrary path no matter how far they
+      go or turn.
     image: {fileID: 21300000, guid: 4409649f9f122b34cb6643ccec4d81ba, type: 3}
   - creatureName: Aswang
-    description: Aswang Description
+    description: Aswang commonly dwell at night in locations such as cemeteries and
+      woods, as their powers are significantly, or sometimes totally, reduced during
+      the daytime.
     image: {fileID: 21300000, guid: 2c5ba9484a21d6047af83b8de4dbb8a4, type: 3}
   - creatureName: Bakunawa
-    description: Bakunawa Description
+    description: The Bakunawa is a colossal serpent-like dragon. Known as the "Moon-Eater"
+      or "Eclipse Bringer", it is famous for attempting to devour the seven moons.
     image: {fileID: 21300000, guid: 0766e6b0867031f4caa2f398ac4e466c, type: 3}
 --- !u!4 &387335348
 Transform:
