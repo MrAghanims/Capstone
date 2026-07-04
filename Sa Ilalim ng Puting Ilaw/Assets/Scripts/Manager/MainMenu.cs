@@ -52,4 +52,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Bestiary"); 
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }

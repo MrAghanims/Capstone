@@ -95,4 +95,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bestiary.unity
     guid: 4e82edcac97e2ad4db47c07582dd03d3
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: b97939fb6799a1e43b7848ca5c812195
   m_configObjects: {}
