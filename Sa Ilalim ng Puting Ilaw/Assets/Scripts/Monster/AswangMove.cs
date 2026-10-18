@@ -79,7 +79,12 @@ public class AswangMove : MonoBehaviour
 
             if (playerFloatingText != null)
             {
-                playerFloatingText.text = cooldownTimer.ToString("F1") + "s";
+                playerFloatingText.text = cooldownTimer.ToString("F1") + "secs";
+
+                if (cooldownTimer <= 1)
+                {
+                    playerFloatingText.text = cooldownTimer.ToString("F1") + "sec";
+                }
             }
 
             if (cooldownTimer <= 0)

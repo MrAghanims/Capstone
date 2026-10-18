@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -52}
-  m_SizeDelta: {x: -1043, y: -443}
+  m_AnchoredPosition: {x: -16, y: -52.75}
+  m_SizeDelta: {x: -1043, y: -444.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &19000250
 MonoBehaviour:
@@ -179,21 +179,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. The Tikbalang challenges you to answer his 3 questions correctly in
-    order to leave.
-
-
-    2. To answer, go far right or left to loop, the number
-    of loops you do, will be your answer.
-
-
-    3. If you are sure about your answer,
-    go to the Tikbalang and he will tell you if you are Right or Wrong.
-
-
-    4.
-    If you answer incorrectly, your loops will reset to 0 and you will be given a
-    chance to answer again. This will NOT END until you correctly answer all 3 questions.'
+  m_text: "1. The Tikbalang challenges you to answer his 3 questions correctly\n
+    in order to leave.\n\n2. To answer, go far right or left to loop, the number
+    of\n loops you do, will be your answer.\n\n3. If you are sure about your answer,
+    go to the Tikbalang \nand he will tell you if you are Right or Wrong.\n\n4. If
+    you answer incorrectly, your loops will reset to 0\n and you will be given a
+    chance to answer again. \nThis will NOT END until you correctly answer all 3
+    questions."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
   m_sharedMaterial: {fileID: -6451162120822809872, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
@@ -220,8 +212,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3074,8 +3066,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -58515,7 +58507,7 @@ RectTransform:
   m_GameObject: {fileID: 2011184188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 338999596}
@@ -58523,8 +58515,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -218}
-  m_SizeDelta: {x: 160, y: 80}
+  m_AnchoredPosition: {x: 0, y: -222.5}
+  m_SizeDelta: {x: 200, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011184190
 MonoBehaviour:

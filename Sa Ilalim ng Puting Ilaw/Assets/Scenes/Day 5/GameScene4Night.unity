@@ -1495,20 +1495,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Memorize the sequence of colored circles shown by the Bakunawa.
-
-
-    2.
-    Walk over to the  pots and press [F] tomatch those colors and make those sounds.
-
-
-    3.
-    After making those sounds, walk over to Lola and press [F]  before time runs
-    out!
-
-
-    4. Match 7 times to make the Bakunawa leave. If you fail, the Bakunawa
-    swims closer to devour the moon!'
+  m_text: "1. Memorize the sequence of colored circles shown by the Bakunawa.\n\n2.
+    Walk over to the  pots and press [F] tomatch those colors and make \nthose sounds.\n\n3.
+    After making those sounds, walk over to Lola and press [F]  \nbefore time runs
+    out!\n\n4. Match 7 times to make the Bakunawa leave. If you fail, the Bakunawa
+    swims \ncloser to devour the moon!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
   m_sharedMaterial: {fileID: -6451162120822809872, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
@@ -3343,7 +3334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &356324895
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47592,7 +47583,7 @@ RectTransform:
   m_GameObject: {fileID: 1007513605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1366030561}
@@ -47600,8 +47591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -218}
-  m_SizeDelta: {x: 160, y: 80}
+  m_AnchoredPosition: {x: 0, y: -222.5}
+  m_SizeDelta: {x: 200, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1007513607
 MonoBehaviour:
@@ -51786,8 +51777,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -58899,6 +58890,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 639235469}
+    - target: {fileID: 8503311980546909299, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8718592278638560941, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -102

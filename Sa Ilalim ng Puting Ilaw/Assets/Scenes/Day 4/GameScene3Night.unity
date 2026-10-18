@@ -1604,16 +1604,16 @@ RectTransform:
   m_GameObject: {fileID: 149152667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.59999996, y: 0.45, z: 0.59999996}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1459087271}
   m_Father: {fileID: 1114878199}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -218}
-  m_SizeDelta: {x: 160, y: 80}
+  m_AnchoredPosition: {x: 0, y: -222.5}
+  m_SizeDelta: {x: 200, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149152669
 MonoBehaviour:
@@ -46463,15 +46463,15 @@ RectTransform:
   m_GameObject: {fileID: 861341593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.87499, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1114878199}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -52}
-  m_SizeDelta: {x: -1043, y: -443}
+  m_AnchoredPosition: {x: -43.74962, y: -55.25}
+  m_SizeDelta: {x: -987.49927, y: -449.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861341595
 MonoBehaviour:
@@ -46493,19 +46493,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Lola has become an Aswang and is trying to eat you.
-
-
-    2. You need
-    collect materials to make a trap for her.
-
-
-    3. The Aswang is fast, but you
-    can temporarily stun them saying the latin words by pressing [Spacebar].
-
-
-    4.
-    Try to run and avoid her and don''t fall for your own trap. Good Luck.'
+  m_text: "1. Lola has become an Aswang and is trying to eat you.\n\n2. You need
+    collect materials to make a trap for her.\n\n3. The Aswang is fast, but you can
+    temporarily stun \nthem saying the latin words by pressing [Spacebar].\n\n4.
+    Try to run and avoid her and don't fall for your own trap. \nGood Luck."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
   m_sharedMaterial: {fileID: -6451162120822809872, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
@@ -46532,8 +46523,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -51300,6 +51291,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 710550857969250590, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.17443848
+      objectReference: {fileID: 0}
     - target: {fileID: 1639048822677843365, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -51347,6 +51342,10 @@ PrefabInstance:
     - target: {fileID: 4862641062475166847, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862641062475166847, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4933487605119008640, guid: 981b4d14b012aad40a259c950de8ae9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -53512,8 +53511,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -57111,7 +57110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: asd
+  m_text: Ready!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
   m_sharedMaterial: {fileID: -6451162120822809872, guid: 60be8a137fd86bf4e89b0b026648cfb2, type: 2}
@@ -57204,8 +57203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.2}
-  m_SizeDelta: {x: 10, y: 1}
+  m_AnchoredPosition: {x: -35.34, y: 1.2}
+  m_SizeDelta: {x: 12, y: 1}
   m_Pivot: {x: 0.5, y: 0.49999988}
 --- !u!1 &1767189587
 GameObject:
